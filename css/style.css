@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+/* body{
+    width: 1020px;
+    margin: auto;
+} */
+
+header{
+    background-color: rgb(59, 59, 255);
+    height: 6vh;
+    display: grid;
+    align-items: center;
+    margin-bottom: 6px;
+}
+header h3{
+    margin-left: 16px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4,120px);
+    gap: 6px;
+}
+.main-content, .sidebar, .twin{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.main-content{
+    grid-column: span 4;
+    grid-row: span 2;
+    background-color: green;
+}
+.sidebar{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: purple;
+}
+.twin{
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: orange;
+}
+footer{
+    background-color: blue;
+    height: 6vh;
+    display: grid;
+    align-items: center;
+    margin-top: 6px;
+}
+footer h3{
+    margin-left: 16px;
+}
+@media (max-width:1020px) {
+    header{
+        background-color: rgb(59, 59, 255);
+        height: 8vh;
+        display: grid;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+    header h3{
+        margin-left: 16px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4,100px);
+        gap: 6px;
+    }
+    .main-content, .sidebar, .twin{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .main-content{
+        grid-column: span 4;
+        grid-row: span 2;
+        background-color: green;
+    }
+    .sidebar{
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: purple;
+    }
+    .twin{
+        grid-column: span 3;
+        grid-row: span 2;
+        background-color: orange;
+    }
+    footer{
+        background-color: blue;
+        height: 8vh;
+        display: grid;
+        align-items: center;
+        margin-top: 6px;
+    }
+    footer h3{
+        margin-left: 16px;
+    }
+}
